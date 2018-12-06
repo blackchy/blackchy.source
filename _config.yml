@@ -75,13 +75,19 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
     repo: git@github.com:blackchy/blackchy.github.io.git
     branch: [master]
-    message: bugfix
+    message: modify post
   #- type: git
     #repo: git@github.com:blackchy/blackchy.source.git
     #branch: [master]

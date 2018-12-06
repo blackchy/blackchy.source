@@ -128,6 +128,33 @@ $ git clone https://github.com/theme-next/theme-next-pace source/lib/pace
 
 等等......
 
+### 添加搜索功能
+
+1. 安装插件
+```
+npm install hexo-generator-search
+npm install hexo-generator-searchdb
+```
+2. 修改hexo配置
+根目录下`_config.yml`中增加如下配置:
+```
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+```
+3. 配置next中的搜索入口
+打开`themes/next/_config.yml`，修改配置:
+```
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+```
+
+参考链接：[为hexo和next增加站内搜索功能][6]
+
 ### 迁移
 
 把Jekyll目录下的_posts中文章全部复制到Hexo目录下的source/_posts中，并把文章名统一为`:year-:month-:day-:title.md`，需要注意的是` _ `开头的文章不会显示，最后修改文章参数：
@@ -183,3 +210,4 @@ $ hexo g -d
 [3]:https://git-scm.com/
 [4]:https://nodejs.org/
 [5]:https://github.com/theme-next/hexo-theme-next
+[6]:https://www.jianshu.com/p/5b62c01c4dfa
