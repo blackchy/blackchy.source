@@ -110,6 +110,22 @@ busuanzi_count:
   post_views: true
   post_views_icon: eye
 ```
+
+5. 安装其他js
+```
+fastclick: true
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-fastclick source/lib/fastclick
+
+lazyload: true
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-jquery-lazyload source/lib/jquery_lazyload
+
+pace: true
+$ cd themes/next
+$ git clone https://github.com/theme-next/theme-next-pace source/lib/pace
+```
+
 等等......
 
 ### 迁移
@@ -134,7 +150,7 @@ $hexo server 简写 hexo s
 ```
 然后打开浏览器访问查看博客（默认：http://localhost:4000 ）
 
-本地试运行的博客没有问题后则开始部署到github。
+本地试运行的博客没有问题后就可以去部署到Github上了。
 
 1. 本地配置deploy,打开根目录`_config.yml`。
 ```
@@ -142,14 +158,7 @@ deploy:
   - type: git
     repo: git@github.com:blackchy/blackchy.github.io.git
     branch: [master]
-    message: blog move to Hexo (before Jekyll)
-  - type: git
-    repo: git@github.com:blackchy/blackchy.source.git
-    branch: [master]
-    extend_dirs: /
-    ignore_hidden: false
-    ignore_pattern:
-        public: .
+    message: a commit message
 ```
 2. 安装hexo-deployer-git
 ```
@@ -160,7 +169,10 @@ $ npm install hexo-deployer-git --save
 $ hexo g -d
 ```
 
-由于Jekyll上传github服务器会自动生成并部署，而Hexo需要本地生成静态文件再上传，所以需要另起一个分支存放hexo源码。
+### 注意事项
+
+* 由于Jekyll上传github服务器会自动生成并部署，而Hexo需要本地生成静态文件再上传，所以需要另起一个分支存放hexo源码。
+* 通过git克隆下来的theme、js，删除对应的.git文件夹。
 
 ----
 
