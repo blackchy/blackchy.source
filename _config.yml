@@ -81,4 +81,11 @@ deploy:
   - type: git
     repo: git@github.com:blackchy/blackchy.github.io.git
     branch: [master]
-    message: bugfix 2
+    message: add new post
+  #- type: git
+    #repo: git@github.com:blackchy/blackchy.source.git
+    #branch: [master]
+    #extend_dirs: /
+    #ignore_hidden: false
+    #ignore_pattern:
+        #public: .
