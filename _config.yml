@@ -87,7 +87,7 @@ deploy:
   - type: git
     repo: git@github.com:blackchy/blackchy.github.io.git
     branch: [master]
-    message: modify post
+    message: add post
   #- type: git
     #repo: git@github.com:blackchy/blackchy.source.git
     #branch: [master]

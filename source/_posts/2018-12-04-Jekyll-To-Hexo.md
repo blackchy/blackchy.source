@@ -5,17 +5,16 @@ categories: misc
 tags: [jekyll,hexo]
 ---
 
-发现了比Jekyll用起来更舒服的Hexo，看了一下[Hexo][1]的[文档][2]过后马上就把它应用到了博客中。
+发现了比[Jekyll][0]用起来更舒服的[Hexo][1]，它是一个快速、简洁且高效的博客框架，其中使用Markdown（或其他渲染引擎）解析文章，最后生成静态网页。研究了一下[Hexo][1]的[文档][2]过后马上就把它应用到了博客中。
 <!-- more -->
 
-详细流程(Windows)如下，具体可参考[Hexo文档][2]。
+详细流程(Windows环境)如下，具体可参考[Hexo文档][2]。
 
 ### 环境准备
 
 1. 安装Git、安装Node.js
  * [Git][3]
  * [Node.js][4]
-
 
 2. 安装Hexo 
 
@@ -205,6 +204,7 @@ $ hexo g -d
 
 <b>至此，迁移完毕。</b>
 
+[0]:https://jekyllrb.com/
 [1]:https://github.com/hexojs/hexo
 [2]:https://hexo.io/zh-cn/docs/
 [3]:https://git-scm.com/
