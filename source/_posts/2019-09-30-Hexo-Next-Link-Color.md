@@ -1,5 +1,5 @@
 title: Hexo Next 修改超链接颜色
-date: 2019-9-29 00:00:00
+date: 2019-9-30 00:00:00
 categories: misc
 tags: [next]
 ---
