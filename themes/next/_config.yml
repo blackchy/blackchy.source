@@ -32,6 +32,14 @@ cache:
   #styles: source/_data/styles.styl
 
 
+# Custom css
+custom_css:
+  post_body_a:
+    enable: true
+    normal_color: "#3296FA"
+    hover_color: "#0593d3"
+
+
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------

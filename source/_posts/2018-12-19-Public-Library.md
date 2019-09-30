@@ -16,7 +16,7 @@ classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
   如图所示：
 ![img][1]
 
-3. 在新建的module目录的build.gradle中添加：
+3. 在新建的module目录的build.gradle中添加(group:自己的github号)：
 ```
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.blackchy'
